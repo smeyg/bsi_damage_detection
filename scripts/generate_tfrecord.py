@@ -27,22 +27,13 @@ flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
 
-# TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'dokuz':
+    if row_label == 'burn':
         return 1
-    elif row_label == 'on':
+    elif row_label == 'crack':
         return 2
-    elif row_label == 'vale':
+    elif row_label == 'nick_or_dent':
         return 3
-    elif row_label == 'kiz':
-        return 4
-    elif row_label == 'papaz':
-        return 5
-    elif row_label == 'as':
-        return 6
-    else:
-        None
 
 
 def split(df, group):
