@@ -61,14 +61,13 @@ pip install tensorflow==1.13.2 protobuf
 in case of GPU availability
 pip install tensorflow-gpu==1.13.2 protobuf
 
-```
 pip install pillow
 pip install lxml
 pip install jupyter
 pip install matplotlib
 pip install pandas
 pip install opencv-python
-
+```
 
 
 Ensure `PYTHONPATH` includes the models directory:
